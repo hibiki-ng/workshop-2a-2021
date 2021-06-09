@@ -1,60 +1,10 @@
 <template>
     <div class="AdminTicket">
         <div class="pole-grid">
-            <div class="pole1">
-                <h4>Pôle Esport</h4>
-                <h5>Responsable : Vacant</h5>
-                <p>Il y a actuellement X missions en cours</p>
-                <div class="button-area">
-                <button class="warning">Gérer les pôles</button>
-                <button class="informative">Gérer les membres</button>
-                <button class="classic">Voir les missions</button>
-                </div>
-            </div>
-            <div class="pole2">
-                <h4>Pôle Communication</h4>
-                <h5>Responsable : Vacant</h5>
-                <p>Il y a actuellement X missions en cours</p>
-                <div class="button-area">
-                <button class="warning">Gérer les pôles</button>
-                <button class="informative">Gérer les membres</button>
-                <button class="classic">Voir les missions</button>
-                </div>
-            </div>
-            <div class="pole3">
-                <h4>Pôle Streaming</h4>
-                <h5>Responsable : Vacant</h5> 
-                <p>Il y a actuellement X missions en cours</p>
-                <div class="button-area">
-                <button class="warning">Gérer les pôles</button>
-                <button class="informative">Gérer les membres</button>
-                <button class="classic">Voir les missions</button>
-                </div>
-            </div>
-            <div class="pole4">
-                <h4>Pôle Evénementiel</h4>
-                <h5>Responsable : Vacant</h5>
-                <p>Il y a actuellement X missions en cours</p>
-                <div class="button-area">
-                <button class="warning">Gérer les pôles</button>
-                <button class="informative">Gérer les membres</button>
-                <button class="classic">Voir les missions</button>
-                </div>
-            </div>
-            <div class="pole5">
-                <h4>Pôle Graphisme</h4>
-                <h5>Responsable : Vacant</h5>
-                <p>Il y a actuellement X missions en cours</p>
-                <div class="button-area">
-                <button class="warning">Gérer les pôles</button>
-                <button class="informative">Gérer les membres</button>
-                <button class="classic">Voir les missions</button>
-                </div>
-            </div>
-            <div class="pole6">
-                <h4>Pôle Presse</h4>
-                <h5>Responsable : Vacant</h5>
-                <p>Il y a actuellement X missions en cours</p>
+            <div v-bind:id="adminPol.id" v-for="adminPol in adminPole" :key="adminPol.id">
+                <h4>{{adminPol.name}}</h4>
+                <h5>Responsable : {{adminPol.responsable}}</h5>
+                <p>Il y a actuellement {{adminPol.mission}} missions en cours</p>
                 <div class="button-area">
                 <button class="warning">Gérer les pôles</button>
                 <button class="informative">Gérer les membres</button>
@@ -66,8 +16,14 @@
 </template>
 
 <script>
+import adminPole from '../data/adminpole.json'
     export default {
-        name: 'AdminTicket'
+        name: 'AdminTicket',
+        data() {
+            return {
+                adminPole: adminPole,
+            };
+        },
     }
 </script>
 
@@ -116,9 +72,8 @@
     .pole6 {
         grid-area: 2 / 3 / 3 / 4;
     }
-
     .pole-grid button {
-        padding: 10px 25px;
+        padding: 10px 30px;
         background: #c62828;
         border: none;
         color: white;

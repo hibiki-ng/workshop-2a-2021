@@ -1,22 +1,31 @@
 <template>
     <div class="PoleGestion">
         <div class="description">
-ee
+            Nos rédacteurs et éditeurs réalisent des articles de presse suivant une ligne éditoriale sur les thèmes de
+            l'esport, du jeu vidéo et de la mixité dans ces secteurs.
         </div>
         <div class="members">
-        eee
+            <li v-for="member in members" :key="member.id">
+            {{member.name}}
+            </li>
         </div>
 
         <div class="tasks">
-        ee
+            ee
         </div>
 
     </div>
 </template>
 
 <script>
+import membersData from '../data/members.json'
     export default {
-        name: 'PoleGestionTicket'
+        name: 'PoleGestionTicket',
+        data() {
+            return {
+                members: membersData,
+            };
+        },
     }
 </script>
 
@@ -25,8 +34,11 @@ ee
     .PoleGestion {
         display: flex;
     }
-    .PoleGestion > div {
+
+    .PoleGestion>div {
         width: 33%;
-        border: 1px solid black;
+        margin: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 50px;
     }
 </style>
