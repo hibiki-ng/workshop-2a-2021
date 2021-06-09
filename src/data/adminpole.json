@@ -1,0 +1,38 @@
+[
+    {
+        "id": "pole1",
+        "name": "Pôle Esport",
+        "responsable": "Vacant",
+        "mission": 0
+    },
+    {
+        "id": "pole2",
+        "name": "Pôle Communication",
+        "responsable": "Vacant",
+        "mission": 0
+    },
+    {
+        "id": "pole3",
+        "name": "Pôle Streaming",
+        "responsable": "Vacant",
+        "mission": 0
+    },
+    {
+        "id": "pole4",
+        "name": "Pôle Evénementiel",
+        "responsable": "Vacant",
+        "mission": 0
+    },
+    {
+        "id": "pole5",
+        "name": "Pôle Graphisme",
+        "responsable": "Vacant",
+        "mission": 0
+    },
+    {
+        "id": "pole6",
+        "name": "Pôle Presse",
+        "responsable": "Vacant",
+        "mission": 0
+    }
+]
