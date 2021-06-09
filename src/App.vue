@@ -7,11 +7,11 @@
           </a>
         </div>
       </nav>
+      <Profile/>
+      <h2 class="mt-5 mb-5">------</h2>
       <AdminTicket/>
       <h2 class="mt-5 mb-5">------</h2>
     <PoleGestionTicket/>
-    <h2 class="mt-5 mb-5">------</h2>
-    <Profile/>
     <h2 class="mt-5 mb-5">------</h2>
     
   </section>
@@ -38,13 +38,5 @@ body {
   padding: 0;
   color: white;
   background-image: url("assets/background.jpg");
-}
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

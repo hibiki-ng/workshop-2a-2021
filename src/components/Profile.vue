@@ -99,16 +99,16 @@ export default {
     font-size: 10pt;
     font-weight: 700;
     border: none;
-    color: #7e7e7e;
+    color: white;
     border: 3px solid #ef900d;
     border-radius: 50px;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.3s;
   }
   #missionslist:hover {
     background-color: #ef900d;
     color: white;
-    transition: 0.5s;
+    transition: 0.3s;
   }
     #skills {
     width: 25%;
