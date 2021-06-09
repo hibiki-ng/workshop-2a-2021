@@ -5,6 +5,7 @@ import Profile from './components/Profile.vue'
 import AdminTicket from './components/AdminTicket.vue'
 import UserTicket from './components/UserTicket.vue'
 import PoleGestionTicket from './components/PoleGestionTicket.vue'
+import Home from './views/Home.vue'
 
 Vue.config.productionTip = false
 
@@ -13,7 +14,10 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: '/',
-    component: Profile
+    components: {
+      default: Home,
+      profile: Profile
+    }
   },
   {
     path: '/poles',
