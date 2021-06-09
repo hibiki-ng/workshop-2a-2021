@@ -36,7 +36,8 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  color: #7E7E7E;
+  color: white;
+  background-image: url("assets/background.jpg");
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

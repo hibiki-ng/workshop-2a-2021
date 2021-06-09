@@ -79,10 +79,10 @@ export default {
     height: 26px;
     width: 80%;
     border-radius: 10px;
-    border: 3px solid #ef900d;
+    border: 3px solid #3FDF3F;
   }
   .progress-bar {
-    background-color: #ef900d;
+    background-color: #3FDF3F;
   }
   #xpcount {
     width: 80%;
@@ -96,13 +96,19 @@ export default {
   #missionslist {
     width: 10%;
     padding: 7px 10px;
-    font-size: 9pt;
+    font-size: 10pt;
     font-weight: 700;
-    background: grey;
     border: none;
-    color: white;
+    color: #7e7e7e;
+    border: 3px solid #ef900d;
     border-radius: 50px;
     text-decoration: none;
+    transition: 0.5s;
+  }
+  #missionslist:hover {
+    background-color: #ef900d;
+    color: white;
+    transition: 0.5s;
   }
     #skills {
     width: 25%;
@@ -115,6 +121,6 @@ export default {
     width: 20%;
     height: 60%;
     box-shadow: 0 3px 3px;
-    border-radius: 20%;
+    border-radius: 50%;
   }
 </style>
