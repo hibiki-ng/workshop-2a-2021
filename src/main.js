@@ -1,8 +1,10 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import App from './App.vue';
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import App from './App.vue'
 import Profile from './components/Profile.vue'
-import AdminTicket from './components/AdminTicket.vue';
+import AdminTicket from './components/AdminTicket.vue'
+import UserTicket from './components/UserTicket.vue'
+import PoleGestionTicket from './components/PoleGestionTicket.vue'
 
 Vue.config.productionTip = false
 
@@ -14,8 +16,16 @@ const routes = [
     component: Profile
   },
   {
-    path: '/missions',
+    path: '/poles',
     component: AdminTicket
+  },
+  {
+    path: '/missions',
+    component: UserTicket
+  },
+  {
+    path: '/membres',
+    component: PoleGestionTicket
   }
 ]
 

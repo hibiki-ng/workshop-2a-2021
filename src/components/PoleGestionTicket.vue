@@ -125,6 +125,7 @@
     .tasks {
         padding: 50px 100px;
         background-color: gray;
+        opacity: 0.6;
         color: white;
         font-size: 1.3rem;
     }
@@ -140,7 +141,7 @@
         border-radius: 0;
         color: white;
         box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .14), 0 1px 7px 0 rgba(0, 0, 0, .12), 0 3px 1px -1px rgba(0, 0, 0, .2);
-        border-radius: 30%;
+        border-radius: 12px;
     }
 
     #member-list {
@@ -168,9 +169,7 @@
     .task-box {
         display: flex;
         align-items: center;
-        //border-radius: 5px;
-        border-right: 5px solid black;
-        border-left: 5px solid black;
+        border-radius: 5px;
         height: 100px;
         padding: 5px;
         margin: 20px;

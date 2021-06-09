@@ -5,9 +5,15 @@
           <router-link to="/" class="navbar-brand" href="#" style="display: flex; justify-content: center;">
             <img src="./assets/logo.png" alt="Logo Game'Her" style="width: 20%; height: auto;">
           </router-link>
-        </div>
-        <div>
-          <router-link to="/missions">Profil</router-link>
+          <div>
+            <router-link to="/poles">Pôles</router-link>
+          </div>
+          <div>
+            <router-link to="/missions" class="ms-2 me-2">Missions</router-link>
+          </div>
+          <div>
+            <router-link to="/membres">Membres</router-link>
+          </div>
         </div>
       </nav>
     <router-view/>
@@ -35,5 +41,6 @@ body {
   padding: 0;
   color: white;
   background-image: url("assets/background.jpg");
+  background-attachment: scroll;
 }
 </style>
