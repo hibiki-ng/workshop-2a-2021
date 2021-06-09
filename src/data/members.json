@@ -1,32 +1,42 @@
 [
-    {
-      "name": "Carissa Duke"
-    },
-    {
-      "name": "Edwards Santos"
-    },
-    {
-      "name": "Ellis Warren"
-    },
-    {
-      "name": "Jimmie Morton"
-    },
-    {
-      "name": "Marina Marshall"
-    },
-    {
-      "name": "Knowles Brewer"
-    },
-    {
-      "name": "Santos Riley"
-    },
-    {
-      "name": "Gwen Lynch"
-    },
-    {
-      "name": "Moran Bean"
-    },
-    {
-      "name": "Karin Oneal"
-    }
-  ]
+  {
+    "picture": "https://i.pravatar.cc/300?img=1",
+    "name": "Gonzales Aguilar"
+  },
+  {
+    "picture": "https://i.pravatar.cc/300?img=3",
+    "name": "Velasquez Patton"
+  },
+  {
+    "picture": "https://i.pravatar.cc/300?img=4",
+    "name": "Maryann Knapp"
+  },
+  {
+    "picture": "https://i.pravatar.cc/300?img=5",
+    "name": "Carolyn Conway"
+  },
+  {
+    "picture": "https://i.pravatar.cc/300?img=6",
+    "name": "Swanson Parker"
+  },
+  {
+    "picture": "https://i.pravatar.cc/300?img=7",
+    "name": "Lorena Mcneil"
+  },
+  {
+    "picture": "https://i.pravatar.cc/300?img=8",
+    "name": "Jackie Hanson"
+  },
+  {
+    "picture": "https://i.pravatar.cc/300?img=9",
+    "name": "Frye Mercer"
+  },
+  {
+    "picture": "https://i.pravatar.cc/300?img=10",
+    "name": "Cathleen Bullock"
+  },
+  {
+    "picture": "https://i.pravatar.cc/300?img=11",
+    "name": "Malone Chambers"
+  }
+]

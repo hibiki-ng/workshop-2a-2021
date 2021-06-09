@@ -73,9 +73,10 @@ import adminPole from '../data/adminpole.json'
         grid-area: 2 / 3 / 3 / 4;
     }
     .pole-grid button {
-        padding: 10px 30px;
+        padding: 10px 25px;
         background: #c62828;
         border: none;
+        border-radius: 0;
         color: white;
         box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .14), 0 1px 7px 0 rgba(0, 0, 0, .12), 0 3px 1px -1px rgba(0, 0, 0, .2);
         border-radius: 50px;
@@ -98,5 +99,8 @@ import adminPole from '../data/adminpole.json'
     .classic {
         background-color: #EEEEEE !important;
         color: black !important;
+    }
+    h5, p {
+        color: #bcbcbc;
     }
 </style>
