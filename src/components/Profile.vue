@@ -81,7 +81,7 @@ export default {
   .progress {
     height: 26px;
     width: 80%;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 3px solid #3FDF3F;
   }
   .progress-bar {
@@ -121,10 +121,10 @@ export default {
     height: 50%;
   }
   .skillsrow h5 {
-    width: 20%;
-    height: 60%;
+    width: 100px;
+    height: 100px;
     box-shadow: 0 3px 3px;
-    border-radius: 50%;
+    border-radius: 50px;
   }
   
 </style>

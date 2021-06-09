@@ -8,12 +8,9 @@
         </div>
       </nav>
       <Profile/>
-      <h2 class="mt-5 mb-5">------</h2>
       <AdminTicket/>
-      <h2 class="mt-5 mb-5">------</h2>
     <PoleGestionTicket/>
-    <h2 class="mt-5 mb-5">------</h2>
-    
+    <router-view></router-view>
   </section>
 </template>
 
@@ -30,6 +27,7 @@ export default {
     Profile
   }
 }
+
 </script>
 
 <style lang="scss">
