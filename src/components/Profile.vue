@@ -1,35 +1,35 @@
 <template>
   <div class="Profile d-flex justify-content-center">
-    <div id="profil" class="d-flex justify-content-center bg-warning">
+    <div id="profil" class="d-flex justify-content-center">
       <div id="infos" class="d-flex flex-column align-items-center">
-        <img id="logo" class="align-self-start" src="../assets/zinogra.png" alt="">
-        <div class="d-flex flex-column align-items-start">
-          <h5>PSEUDO</h5>
-          <h5>NOM Prénom</h5>
+        <img id="logo" class="" src="../assets/zinogra.png" alt="">
+        <div class="d-flex flex-column">
+          <h4 id="name" class="ps-3">ZINOGRA</h4>
+          <h5 class="ps-3">Louis DI BATTISTA</h5>
         </div>
       </div>
-      <div id="progress" class="d-flex flex-column align-items-center bg-danger">
-        <div id="pole" class="d-flex flex-row bg-info">
-          <h2>X</h2>
+      <div id="progress" class="d-flex flex-column align-items-center">
+        <div id="pole" class="d-flex flex-row">
+          <img id="graphismelogo" src="../assets/graphisme.png" alt="">
           <h2 class="ms-5" style="font-weight: 700;">Pôle Graphisme</h2>
         </div>
-        <div id="progressbar" class="d-flex flex-column justify-content-end align-items-center bg-light">
-          <div class="progress">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">aaaaaa</div>
+        <div id="progressbar" class="d-flex flex-column justify-content-end align-items-center">
+          <div class="progress bg-light">
+            <div class="progress-bar" role="progressbar" style="width: 32%" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <div id="xpcount" class="bg-danger d-flex flex-row justify-content-end mt-1">
+          <div id="xpcount" class="d-flex flex-row justify-content-end mt-1">
             <p>80 XP / 250 XP</p>
           </div>
-          <div id="missionsxp" class="bg-danger">
+          <div id="missionsxp" class="">
             <a id="missionslist" style="width: 10%;" href="#">Voir les missions pour augmenter en XP</a>
           </div>
         </div>
       </div>
-      <div id="skills" class="d-flex flex-column align-items-center bg-danger">
-        <div id="skillsrow1" class="d-flex flex-row align-items-center justify-content-center bg-success skillsrow">
+      <div id="skills" class="d-flex flex-column align-items-center">
+        <div id="skillsrow1" class="d-flex flex-row align-items-center justify-content-center skillsrow">
           <h5>test</h5>
         </div>
-        <div id="skillsrow2" class="d-flex flex-row align-items-center justify-content-center bg-warning skillsrow">
+        <div id="skillsrow2" class="d-flex flex-row align-items-center justify-content-center skillsrow">
           <h5>test</h5>
         </div>
       </div>
@@ -58,6 +58,13 @@ export default {
   #profil {
     width: 95%;
   }
+  #name {
+    font-weight: 700;
+  }
+  #graphismelogo {
+    width: 40px;
+    height: 40px;
+  }
   #progress {
     width: 55%;
   }
@@ -72,7 +79,10 @@ export default {
     height: 26px;
     width: 80%;
     border-radius: 10px;
-    border: 3px solid yellow;
+    border: 3px solid #ef900d;
+  }
+  .progress-bar {
+    background-color: #ef900d;
   }
   #xpcount {
     width: 80%;
