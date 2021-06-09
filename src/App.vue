@@ -3,7 +3,7 @@
       <nav class="navbar navbar-expand-lg navbar-light" style="width: 100%;">
         <div class="container-fluid" style="display: flex; justify-content: center; width: 100%;">
           <a class="navbar-brand" href="#" style="display: flex; justify-content: center;">
-            <img src="./assets/logo.png" alt="Logo Game'Her" width="20%">
+            <img src="./assets/logo.png" alt="Logo Game'Her" style="width: 20%; height: auto;">
           </a>
         </div>
       </nav>
@@ -12,6 +12,7 @@
     <PoleGestionTicket/>
     <h2 class="mt-5 mb-5">------</h2>
     <Profile/>
+    <h2 class="mt-5 mb-5">------</h2>
     
   </section>
 </template>

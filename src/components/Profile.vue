@@ -2,13 +2,13 @@
   <div class="Profile d-flex justify-content-center">
     <div id="profil" class="d-flex justify-content-center bg-warning">
       <div id="infos" class="d-flex flex-column align-items-center">
-        <img id="logo" src="../assets/zinogra.png" alt="">
-        <div class="d-flex flex-column">
+        <img id="logo" class="align-self-start" src="../assets/zinogra.png" alt="">
+        <div class="d-flex flex-column align-items-start">
           <h5>PSEUDO</h5>
           <h5>NOM Prénom</h5>
         </div>
       </div>
-      <div id="progress" class="d-flex flex-column align-items-center bg-success">
+      <div id="progress" class="d-flex flex-column align-items-center bg-danger">
         <div id="pole" class="d-flex flex-row bg-info">
           <h2>X</h2>
           <h2 class="ms-5" style="font-weight: 700;">Pôle Graphisme</h2>
