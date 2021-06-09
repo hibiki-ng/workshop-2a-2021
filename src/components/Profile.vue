@@ -4,8 +4,8 @@
       <div id="infos" class="d-flex flex-column align-items-center">
         <img id="logo" class="" src="../assets/zinogra.png" alt="">
         <div class="d-flex flex-column">
-          <h4 id="name" class="ps-3">ZINOGRA</h4>
-          <h5 class="ps-3">Louis DI BATTISTA</h5>
+          <h4 id="nickname" class="ps-3">ZINOGRA</h4>
+          <h5 id="fullname" class="ps-3">Louis DI BATTISTA</h5>
         </div>
       </div>
       <div id="progress" class="d-flex flex-column align-items-center">
@@ -58,8 +58,11 @@ export default {
   #profil {
     width: 95%;
   }
-  #name {
+  #nickname {
     font-weight: 700;
+  }
+  #fullname {
+    color: #bcbcbc;
   }
   #graphismelogo {
     width: 40px;
@@ -110,7 +113,7 @@ export default {
     color: white;
     transition: 0.3s;
   }
-    #skills {
+  #skills {
     width: 25%;
   }
   .skillsrow {
@@ -123,4 +126,5 @@ export default {
     box-shadow: 0 3px 3px;
     border-radius: 50%;
   }
+  
 </style>
