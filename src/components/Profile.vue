@@ -28,12 +28,6 @@
       <div id="skills" class="d-flex flex-column align-items-start ps-3">
         <div id="skillsrow1" class="d-flex flex-row align-items-center justify-content-between skillsrow">
           <img src="../assets/gem1.png" alt="">
-          <div id="theTog" class="TogWrap">
-            <a href="#" id="togTrigger">Créativité</a>
-            <p class="togContent">
-                
-            </p>
-        </div>
           <img src="../assets/gem2.png" alt="">
         </div>
         <div id="skillsrow2" class="d-flex flex-row align-items-center justify-content-between skillsrow">
@@ -51,41 +45,7 @@
     name: 'Profile'
   }
 
-  var oVTog = 
-  {
-      toggle: function (el) 
-      {
-          oVTog.container = el.parentNode;
-          oVTog.para = oVTog.container.getElementsByTagName('p')[0];  
-          oVTog.para.style.display = "none";
-
-          el.onmouseover = function () 
-          {
-              oVTog.para.style.display = '';
-              return false;
-          };
-
-          el.onmouseout = function () 
-          {
-              oVTog.para.style.display = 'none';
-              return false;
-          };
-
-          el.onclick = function () 
-          {
-              oVTog.para.style.display = oVTog.para.style.display == 'none' ? '' : 'none';
-              return false;
-          };
-      }
-  };
-
-window.onload = function () 
-{
-    var mouseToggle = document.getElementById('togTrigger');
-    oVTog.toggle(mouseToggle);
-    var mouseToggle2 = document.getElementById('togTrigger2');
-    oVTog.toggle(mouseToggle2);
-};
+  
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -172,41 +132,6 @@ window.onload = function ()
     box-shadow: 0 3px 3px;
     border-radius: 50px;
     justify-content: space-between;
-  }
-
-  a 
-  {
-      text-decoration: none;
-  outline: none;
-  }
-
-  div#page 
-  {
-      margin: 60px auto;
-      border: 1px solid #dedede;
-      width: 910px;
-  }
-
-  .TogWrap 
-  {
-      width: 400px;
-      padding: 22px;
-  }
-
-  #togTrigger 
-  {
-      border: 1px solid #bebebe;
-      padding: 7px 8px;
-      background: #df7623;
-      color: #fff;
-  }
-
-  .togContent  
-  {
-      margin-top: 9px;
-      border: 1px solid #bebebe;
-      padding: 16px 10px 10px 10px;
-      background: #ededed;
   }
   
 </style>
