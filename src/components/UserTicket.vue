@@ -227,7 +227,7 @@
 
   #mission-search input[type=submit] {
     padding: 10px 25px;
-    border-radius: 15px;
+    border-radius: 25px;
     border: none;
     border: 5px solid #ef900d;
     background: transparent;
