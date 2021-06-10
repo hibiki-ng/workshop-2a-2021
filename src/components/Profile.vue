@@ -1,17 +1,17 @@
 <template>
   <div class="Profile d-flex justify-content-center">
     <div id="profil" class="d-flex justify-content-center">
-      <div id="infos" class="d-flex flex-column align-items-center">
-        <img id="logo" class="" src="../assets/zinogra.png" alt="">
+      <div id="infos" class="d-flex flex-column align-items-start">
+        <img id="logo" class="me-4" src="../assets/zinogra.png" alt="">
         <div class="d-flex flex-column">
-          <h4 id="nickname" class="ps-3">ZINOGRA</h4>
-          <h5 id="fullname" class="ps-3">Louis DI BATTISTA</h5>
+          <h4 id="nickname" class="">ZINOGRA</h4>
+          <h5 id="fullname" class="">Louis DI BATTISTA</h5>
         </div>
       </div>
       <div id="progress" class="d-flex flex-column align-items-center">
         <div id="pole" class="d-flex flex-row">
           <img id="graphismelogo" src="../assets/graphisme.png" alt="">
-          <h2 class="ms-5" style="font-weight: 700;">Pôle Graphisme</h2>
+          <h2 class="ms-3" style="font-weight: 700;">Pôle Graphisme</h2>
         </div>
         <div id="progressbar" class="d-flex flex-column justify-content-end align-items-center">
           <div class="progress bg-light">
@@ -25,12 +25,14 @@
           </div>
         </div>
       </div>
-      <div id="skills" class="d-flex flex-column align-items-center">
-        <div id="skillsrow1" class="d-flex flex-row align-items-center justify-content-center skillsrow">
-          <h5>test</h5>
+      <div id="skills" class="d-flex flex-column align-items-start">
+        <div id="skillsrow1" class="d-flex flex-row align-items-center justify-content-between skillsrow">
+          <img src="../assets/gem3.png" alt="">
+          <img src="../assets/gem3.png" alt="">
         </div>
-        <div id="skillsrow2" class="d-flex flex-row align-items-center justify-content-center skillsrow">
-          <h5>test</h5>
+        <div id="skillsrow2" class="d-flex flex-row align-items-center justify-content-start skillsrow">
+          <img src="../assets/gem3.png" alt="">
+          <img src="../assets/gem3.png" alt="">
         </div>
       </div>
 
@@ -50,13 +52,14 @@ export default {
     margin: 40px 0 0;
   }
   #infos {
-    width: 20%;
+    width: 14%;
   }
   #logo {
-    width: 40%;
+    width: 60%;
   }
   #profil {
-    width: 95%;
+    width: 81%;
+    height: 20vh;
   }
   #nickname {
     font-weight: 700;
@@ -114,17 +117,20 @@ export default {
     transition: 0.3s;
   }
   #skills {
-    width: 25%;
+    width: 14%;
   }
   .skillsrow {
     width: 100%;
     height: 50%;
+    background-color: red;
   }
-  .skillsrow h5 {
-    width: 100px;
-    height: 100px;
+  .skillsrow img {
+    width: 80px;
+    height: 80px;
+    padding: 10px 10px;
     box-shadow: 0 3px 3px;
     border-radius: 50px;
+    justify-content: space-between;
   }
   
 </style>
