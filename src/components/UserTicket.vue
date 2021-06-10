@@ -248,6 +248,8 @@
     padding: 40px 20px;
     display: flex;
     justify-content: space-around;
+    background-color: hsla(11, 0%, 100%, .2);
+    opacity: 1;
   }
   .task-detail div {
     margin: 5px 0;
