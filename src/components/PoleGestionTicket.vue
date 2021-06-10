@@ -149,6 +149,7 @@
         display: flex;
         justify-content: space-between;
         margin-right: 10%;
+        margin-bottom: 20px;
     }
 
     .button-area {
