@@ -81,10 +81,10 @@
 
 window.onload = function () 
 {
-    var l = document.getElementById('togTrigger');
-    oVTog.toggle(l);
-    var l = document.getElementById('togTrigger2');
-    oVTog.toggle(l);
+    var mouseToggle = document.getElementById('togTrigger');
+    oVTog.toggle(mouseToggle);
+    var mouseToggle2 = document.getElementById('togTrigger2');
+    oVTog.toggle(mouseToggle2);
 };
 </script>
 
