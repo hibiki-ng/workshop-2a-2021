@@ -32,7 +32,7 @@
                     </span>
                     <a style="float:right" class="task-url" v-bind:href="ticket.web_url">{{ticket.title}}</a>
                     <span class="task-due">
-                        {{ticket.due_date | dd/yy/mm}}
+                        {{ticket.due_date}}
                     </span>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                     </span>
                     <a style="float:right" class="task-url" v-bind:href="ticket.web_url">{{ticket.title}}</a>
                     <span class="task-created">
-                        {{ticket.created_at }}
+                        {{ticket.created_at}}
                     </span>
                     <span class="task-closed">
                         {{ticket.closed_at}}
@@ -220,6 +220,7 @@
         margin-right: 10%;
         background-color: #ffffff;
         color: black;
+        background-color: hsla(11, 0%, 100%, .8);
     }
 
     .task-box a {

@@ -249,7 +249,6 @@
     display: flex;
     justify-content: space-around;
     background-color: hsla(11, 0%, 100%, .2);
-    opacity: 1;
   }
   .task-detail div {
     margin: 5px 0;
@@ -260,7 +259,8 @@
     border-radius: 50%;
   }
   .task-xp {
-    color: gray;
+    color: #60DE30;
+    font-weight: bold;
   }
   .block-left, .block-right {
     display: flex;
