@@ -51,4 +51,7 @@ body {
   font-weight: 700;
   font-size: 14pt;
 }
+.navbar {
+  background-color: #001724;
+}
 </style>
