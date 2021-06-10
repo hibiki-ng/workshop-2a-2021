@@ -1,12 +1,12 @@
 <template>
   <section>
       <nav class="navbar navbar-expand-lg navbar-light mb-5" style="width: 100%;">
-        <div class="container-fluid" style="display: flex; justify-content: center; width: 100%;">
+        <div class="container-fluid" style="display: flex; justify-content: center; width: 68%;">
           <div>
             <router-link to="/poles" class="link">Pôles</router-link>
           </div>
           <router-link to="/" class="navbar-brand" href="#" style="display: flex; justify-content: center;">
-            <img src="./assets/logo.png" alt="Logo Game'Her" style="width: 25%; height: auto;">
+            <img src="./assets/logo.png" alt="Logo Game'Her" style="width: 23%; height: auto;">
           </router-link>
           <div>
             <router-link to="/missions" class="me-3 link">Missions</router-link>

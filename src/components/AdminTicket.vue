@@ -82,7 +82,7 @@ import adminPole from '../data/adminpole.json'
         border-radius: 50px;
     }
     .button-area {
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }

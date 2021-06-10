@@ -230,9 +230,16 @@
     border-radius: 15px;
     border: none;
     border: 5px solid #ef900d;
-    background-color: #ef900d;
+    background: transparent;
+    transition: 0.2s;
+    font-weight: 700;
     color: white;
     margin-left: 15px;
+  }
+
+  #mission-search input[type=submit]:hover {
+    background-color: #ef900d;
+    transition: 0.2s;
   }
 
   #task-list {
@@ -279,13 +286,22 @@
   }
   .task-share a {
     padding: 7px 12px;
-    background-color: #bcbcbc;
+    border: 4px solid #bcbcbc;
     margin-left: 20px;
     border-radius: 50px;
     text-decoration:none;
     color: #ffffff;
+    transition: 0.2s;
+  }
+  .task-share a:hover {
+    background-color: #bcbcbc;
+    transition: 0.2s;
   }
   .task-share a:last-child {
+    border: 4px solid #ef900d;
+  }
+  .task-share a:last-child:hover {
     background-color: #ef900d;
+    transition : 0.2s;
   }
 </style>

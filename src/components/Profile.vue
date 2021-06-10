@@ -21,7 +21,7 @@
             <p>80 XP / 250 XP</p>
           </div>
           <div id="missionsxp" class="">
-            <a id="missionslist" style="width: 10%;" href="#">Voir les missions pour augmenter en XP</a>
+            <router-link to="/missions" id="missionslist" style="width: 10%;" href="#">Voir les missions pour augmenter en XP</router-link>
           </div>
         </div>
       </div>
@@ -109,12 +109,12 @@ export default {
     border: 3px solid #ef900d;
     border-radius: 50px;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.2s;
   }
   #missionslist:hover {
     background-color: #ef900d;
     color: white;
-    transition: 0.3s;
+    transition: 0.2s;
   }
   #skills {
     width: 14%;
