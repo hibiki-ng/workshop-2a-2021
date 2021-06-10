@@ -16,27 +16,25 @@ const routes = [
     path: '/',
     components: {
       default: Home,
+      profile: Profile
     }
   },
   {
     path: '/poles',
     components: {
-      default: AdminTicket,
-      profile: Profile
+      default: AdminTicket
     }
   },
   {
     path: '/missions',
     components: {
-      default: UserTicket,
-      profile: Profile
+      default: UserTicket
     }
   },
   {
     path: '/membres',
     components: {
-      default: PoleGestionTicket,
-      profile: Profile
+      default: PoleGestionTicket
     }
   }
 ]

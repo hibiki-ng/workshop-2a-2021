@@ -6,7 +6,7 @@
             <router-link to="/poles" class="link">Pôles</router-link>
           </div>
           <router-link to="/" class="navbar-brand" href="#" style="display: flex; justify-content: center;">
-            <img src="./assets/logo.png" alt="Logo Game'Her" style="width: 20%; height: auto;">
+            <img src="./assets/logo.png" alt="Logo Game'Her" style="width: 25%; height: auto;">
           </router-link>
           <div>
             <router-link to="/missions" class="me-3 link">Missions</router-link>
@@ -16,7 +16,7 @@
           </div>
         </div>
       </nav>
-    <!--<router-view name="profile" class="mb-5"/>-->
+    <router-view name="profile" class="mb-5"/>
     <router-view/>
   </section>
 </template>
