@@ -25,8 +25,8 @@
                 </div>
             </div>
             <div class="task-list">
-                <div v-for="ticket in ticket_todo.slice(counter_task_todo1, counter_task_todo2)"
-                    v-bind:key="ticket.id" class="task-box">
+                <div v-for="ticket in ticket_todo.slice(counter_task_todo1, counter_task_todo2)" v-bind:key="ticket.id"
+                    class="task-box">
                     <span class="task-id">
                         {{ticket.id}}
                     </span>
@@ -44,14 +44,14 @@
                 </div>
             </div>
             <div class="task-list">
-                <div v-for="ticket in ticket_work.slice(counter_task_work1, counter_task_work2)"
-                    v-bind:key="ticket.id" class="task-box">
+                <div v-for="ticket in ticket_work.slice(counter_task_work1, counter_task_work2)" v-bind:key="ticket.id"
+                    class="task-box">
                     <span class="task-id">
                         {{ticket.id}}
                     </span>
                     <a style="float:right" class="task-url" v-bind:href="ticket.URL">{{ticket.title}}</a>
                     <span class="task-created">
-                        {{ticket.created_at}}
+                        {{ticket.created_at | formatDate}}
                     </span>
                     <span class="task-due">
                         {{ticket.due_date}}
@@ -66,17 +66,17 @@
                 </div>
             </div>
             <div class="task-list">
-                <div v-for="ticket in ticket_done.slice(counter_task_done1, counter_task_done2)"
-                    v-bind:key="ticket.id" class="task-box">
+                <div v-for="ticket in ticket_done.slice(counter_task_done1, counter_task_done2)" v-bind:key="ticket.id"
+                    class="task-box">
                     <span class="task-id">
                         {{ticket.id}}
                     </span>
                     <a style="float:right" class="task-url" v-bind:href="ticket.web_url">{{ticket.title}}</a>
                     <span class="task-created">
-                        {{ticket.created_at}}
+                        {{ticket.created_at | formatDate}}
                     </span>
                     <span class="task-closed">
-                        {{ticket.closed_at}}
+                        {{ticket.closed_at | formatDate}}
                     </span>
                 </div>
             </div>
@@ -86,16 +86,27 @@
 </template>
 
 <script>
+    import Vue from 'vue';
     import axios from 'axios';
     import membersData from '../data/members.json';
+    import moment from 'moment';
+
+    Vue.filter('formatDate', function (value) {
+        if (value) {
+            return moment(String(value)).format('MM/DD/YYYY hh:mm')
+        }
+    });
 
     /*var sort_status = tickets.filter(tickets => {
         return tickets.Status == "Closed";
     })*/
 
-    const request_todo = axios.get("https://gitlab.eemi.tech/api/v4/projects/3524/issues?state=opened&access_token=xnrobwy1Mo8SMxubzdoq");
-    const request_work = axios.get("https://gitlab.eemi.tech/api/v4/projects/3524/issues?state=opened&access_token=xnrobwy1Mo8SMxubzdoq");
-    const request_done = axios.get("https://gitlab.eemi.tech/api/v4/projects/3524/issues?state=closed&access_token=xnrobwy1Mo8SMxubzdoq");
+    const request_todo = axios.get(
+        "https://gitlab.eemi.tech/api/v4/projects/3524/issues?state=opened&access_token=xnrobwy1Mo8SMxubzdoq");
+    const request_work = axios.get(
+        "https://gitlab.eemi.tech/api/v4/projects/3524/issues?state=opened&access_token=xnrobwy1Mo8SMxubzdoq");
+    const request_done = axios.get(
+        "https://gitlab.eemi.tech/api/v4/projects/3524/issues?state=closed&access_token=xnrobwy1Mo8SMxubzdoq");
 
     export default {
         name: 'PoleGestionTicket',
@@ -121,9 +132,9 @@
                     this.ticket_work = responses[1].data;
                     this.ticket_done = responses[2].data;
                 }))
-            
+
         },
-        
+
     }
 </script>
 
