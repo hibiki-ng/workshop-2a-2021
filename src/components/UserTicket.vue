@@ -279,6 +279,7 @@
   }
   .current-mission {
     background-color: #4EC814;
+    opacity: 0.8;
     width: 200px;
     padding: 2px;
     color: white;
