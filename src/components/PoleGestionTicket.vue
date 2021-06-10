@@ -17,9 +17,13 @@
             </div>
         </div>
         <div class="tasks">
-            <button v-on:click="counter_task_todo1 += 5, counter_task_todo2 += 5">►</button>
-            <button v-on:click="counter_task_todo1 -= 5, counter_task_todo2 -= 5">◄</button>
-            <h2>Tâches à faire</h2>
+            <div class="task-header">
+                <h2>Tâches à faire</h2>
+                <div class="button-area">
+                    <button v-on:click="counter_task_todo1 += 5, counter_task_todo2 += 5">►</button>
+                    <button v-on:click="counter_task_todo1 -= 5, counter_task_todo2 -= 5">◄</button>
+                </div>
+            </div>
             <div class="task-list">
                 <div v-for="ticket in tickets.slice(counter_task_todo1, counter_task_todo2)"
                     v-bind:key="ticket.Issue_ID" class="task-box">
@@ -32,9 +36,13 @@
                     </span>
                 </div>
             </div>
-            <button v-on:click="counter_task_work1 += 5, counter_task_work2 += 5">►</button>
-            <button v-on:click="counter_task_work1 -= 5, counter_task_work2 -= 5">◄</button>
-            <h2>Tâches en cours</h2>
+            <div class="task-header">
+                <h2>Tâches en cours</h2>
+                <div class="button-area">
+                    <button v-on:click="counter_task_work1 += 5, counter_task_work2 += 5">►</button>
+                    <button v-on:click="counter_task_work1 -= 5, counter_task_work2 -= 5">◄</button>
+                </div>
+            </div>
             <div class="task-list">
                 <div v-for="ticket in tickets.slice(counter_task_work1, counter_task_work2)"
                     v-bind:key="ticket.Issue_ID" class="task-box">
@@ -50,9 +58,13 @@
                     </span>
                 </div>
             </div>
-            <button v-on:click="counter_task_done1 += 5, counter_task_done2 += 5">►</button>
-            <button v-on:click="counter_task_done1 -= 5, counter_task_done2 -= 5">◄</button>
-            <h2>Tâches finies</h2>
+            <div class="task-header">
+                <h2>Tâches finies</h2>
+                <div class="button-area">
+                    <button v-on:click="counter_task_done1 += 5, counter_task_done2 += 5">►</button>
+                    <button v-on:click="counter_task_done1 -= 5, counter_task_done2 -= 5">◄</button>
+                </div>
+            </div>
             <div class="task-list">
                 <div v-for="ticket in tickets.slice(counter_task_done1, counter_task_done2)"
                     v-bind:key="ticket.Issue_ID" class="task-box">
@@ -125,16 +137,28 @@
     .tasks {
         padding: 50px 100px;
         background-color: gray;
-        opacity: 0.6;
+        opacity: 0.8;
         color: white;
         font-size: 1.3rem;
     }
+
     .tasks h2 {
-        margin-left: 10%;
+        margin-left: 11%;
     }
+
+    .task-header {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10%;
+    }
+
+    .button-area {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
     .tasks button {
-        float: right;
-        margin: 0 10px;
+        margin-left: 10px;
         padding: 10px 15px;
         background: #ef900d;
         border: none;
@@ -159,9 +183,11 @@
         width: calc(20% - 40px);
         margin: 20px;
     }
+
     .task-list .task-box:first-child {
         margin-top: 50px;
     }
+
     .task-list .task-box:last-child {
         margin-bottom: 50px;
     }
