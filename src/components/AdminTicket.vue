@@ -74,7 +74,7 @@ import adminPole from '../data/adminpole.json'
     }
     .pole-grid button {
         padding: 10px 25px;
-        background: #c62828;
+        background: transparent;
         border: none;
         border-radius: 0;
         color: white;
@@ -89,16 +89,33 @@ import adminPole from '../data/adminpole.json'
     .button-area > button {
         margin: 10px;
         width: 40%;
+        font-weight: 600;
     }
     .warning {
-        background-color: #ef900d !important;
+        border: 4px solid #ef900d !important;
+        transition: 0.2s;
     }
-    .informative {
-        background-color: #3366CC !important;
+    .warning:hover {
+        background-color: #ef900d !important;
+        transition: 0.2s;
+    }
+    .informative{
+        border: 4px solid #3366cc !important;
+        transition: 0.2s;
+    }
+    .informative:hover {
+        background-color: #3366cc !important;
+        transition: 0.2s;
     }
     .classic {
-        background-color: #EEEEEE !important;
+        border: 4px solid white !important;
+        color: white !important;
+        transition: 0.2s;
+    }
+    .classic:hover {
+        background-color: white !important;
         color: black !important;
+        transition: 0.2s;
     }
     h5, p {
         color: #dcdcdc;
