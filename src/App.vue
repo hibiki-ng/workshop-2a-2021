@@ -16,7 +16,7 @@
           </div>
         </div>
       </nav>
-    <router-view name="profile" class="mb-5"/>
+    <!--<router-view name="profile" class="mb-5"/>-->
     <router-view/>
   </section>
 </template>
@@ -43,6 +43,7 @@ body {
   color: white;
   background-image: url("assets/background.jpg");
   background-attachment: scroll;
+  background-size: cover;
 }
 .link {
   text-decoration: none;

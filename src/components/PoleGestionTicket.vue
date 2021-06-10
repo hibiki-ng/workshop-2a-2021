@@ -116,7 +116,7 @@
         display: flex;
         justify-content: space-around;
         padding: 50px;
-        background-color: gray;
+        background-color: #001724;
         color: white;
     }
 
@@ -136,8 +136,7 @@
 
     .tasks {
         padding: 50px 100px;
-        background-color: gray;
-        opacity: 0.8;
+        opacity: 0.9;
         color: white;
         font-size: 1.3rem;
     }
@@ -181,7 +180,7 @@
         align-items: center;
         flex-grow: 1;
         width: calc(20% - 40px);
-        margin: 20px;
+        margin: 30px 10px;
     }
 
     .task-list .task-box:first-child {
@@ -236,7 +235,7 @@
     }
 
     .member-picture {
-        width: 200px;
+        width: 150px;
         border-radius: 50%;
     }
 </style>
