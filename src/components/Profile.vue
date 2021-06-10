@@ -25,14 +25,14 @@
           </div>
         </div>
       </div>
-      <div id="skills" class="d-flex flex-column align-items-start">
+      <div id="skills" class="d-flex flex-column align-items-start ps-3">
         <div id="skillsrow1" class="d-flex flex-row align-items-center justify-content-between skillsrow">
-          <img src="../assets/gem3.png" alt="">
-          <img src="../assets/gem3.png" alt="">
+          <img src="../assets/gem1.png" alt="">
+          <img src="../assets/gem2.png" alt="">
         </div>
-        <div id="skillsrow2" class="d-flex flex-row align-items-center justify-content-start skillsrow">
+        <div id="skillsrow2" class="d-flex flex-row align-items-center justify-content-between skillsrow">
           <img src="../assets/gem3.png" alt="">
-          <img src="../assets/gem3.png" alt="">
+          <img src="../assets/gem4.png" alt="">
         </div>
       </div>
 
@@ -122,7 +122,6 @@ export default {
   .skillsrow {
     width: 100%;
     height: 50%;
-    background-color: red;
   }
   .skillsrow img {
     width: 80px;
