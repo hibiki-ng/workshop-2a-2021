@@ -25,14 +25,14 @@
                 </div>
             </div>
             <div class="task-list">
-                <div v-for="ticket in tickets.slice(counter_task_todo1, counter_task_todo2)"
-                    v-bind:key="ticket.Issue_ID" class="task-box">
+                <div v-for="ticket in ticket_todo.slice(counter_task_todo1, counter_task_todo2)"
+                    v-bind:key="ticket.id" class="task-box">
                     <span class="task-id">
-                        {{ticket.Issue_ID}}
+                        {{ticket.id}}
                     </span>
-                    <a style="float:right" class="task-url" v-bind:href="ticket.URL">{{ticket.Title}}</a>
+                    <a style="float:right" class="task-url" v-bind:href="ticket.web_url">{{ticket.title}}</a>
                     <span class="task-due">
-                        {{ticket.Due_Date}}
+                        {{ticket.due_date}}
                     </span>
                 </div>
             </div>
@@ -44,17 +44,17 @@
                 </div>
             </div>
             <div class="task-list">
-                <div v-for="ticket in tickets.slice(counter_task_work1, counter_task_work2)"
-                    v-bind:key="ticket.Issue_ID" class="task-box">
+                <div v-for="ticket in ticket_work.slice(counter_task_work1, counter_task_work2)"
+                    v-bind:key="ticket.id" class="task-box">
                     <span class="task-id">
-                        {{ticket.Issue_ID}}
+                        {{ticket.id}}
                     </span>
-                    <a style="float:right" class="task-url" v-bind:href="ticket.URL">{{ticket.Title}}</a>
+                    <a style="float:right" class="task-url" v-bind:href="ticket.URL">{{ticket.title}}</a>
                     <span class="task-created">
-                        {{ticket.Created_At}}
+                        {{ticket.created_at}}
                     </span>
                     <span class="task-due">
-                        {{ticket.Due_Date}}
+                        {{ticket.due_date}}
                     </span>
                 </div>
             </div>
@@ -66,39 +66,45 @@
                 </div>
             </div>
             <div class="task-list">
-                <div v-for="ticket in tickets.slice(counter_task_done1, counter_task_done2)"
-                    v-bind:key="ticket.Issue_ID" class="task-box">
+                <div v-for="ticket in ticket_done.slice(counter_task_done1, counter_task_done2)"
+                    v-bind:key="ticket.id" class="task-box">
                     <span class="task-id">
-                        {{ticket.Issue_ID}}
+                        {{ticket.id}}
                     </span>
-                    <a style="float:right" class="task-url" v-bind:href="ticket.URL">{{ticket.Title}}</a>
+                    <a style="float:right" class="task-url" v-bind:href="ticket.web_url">{{ticket.title}}</a>
                     <span class="task-created">
-                        {{ticket.Created_At}}
+                        {{ticket.created_at}}
                     </span>
                     <span class="task-closed">
-                        {{ticket.Closed_At}}
+                        {{ticket.closed_at}}
                     </span>
                 </div>
             </div>
-
+            {{info}}
         </div>
     </div>
 </template>
 
 <script>
+    import axios from 'axios';
     import membersData from '../data/members.json';
-    import tickets from '../data/tickets.json';
 
     /*var sort_status = tickets.filter(tickets => {
         return tickets.Status == "Closed";
     })*/
 
+    const request_todo = axios.get("https://gitlab.eemi.tech/api/v4/projects/3524/issues?state=opened&access_token=xnrobwy1Mo8SMxubzdoq");
+    const request_work = axios.get("https://gitlab.eemi.tech/api/v4/projects/3524/issues?state=opened&access_token=xnrobwy1Mo8SMxubzdoq");
+    const request_done = axios.get("https://gitlab.eemi.tech/api/v4/projects/3524/issues?state=closed&access_token=xnrobwy1Mo8SMxubzdoq");
+
     export default {
         name: 'PoleGestionTicket',
         data() {
             return {
+                ticket_todo: null,
+                ticket_work: null,
+                ticket_done: null,
                 members: membersData,
-                tickets: tickets,
                 counter_task_todo1: 0,
                 counter_task_todo2: 5,
                 counter_task_work1: 0,
@@ -107,6 +113,17 @@
                 counter_task_done2: 5,
             };
         },
+        mounted() {
+            axios
+                .all([request_todo, request_work, request_done])
+                .then(axios.spread((...responses) => {
+                    this.ticket_todo = responses[0].data;
+                    this.ticket_work = responses[1].data;
+                    this.ticket_done = responses[2].data;
+                }))
+            
+        },
+        
     }
 </script>
 
