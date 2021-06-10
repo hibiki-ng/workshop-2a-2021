@@ -101,6 +101,6 @@ import adminPole from '../data/adminpole.json'
         color: black !important;
     }
     h5, p {
-        color: #bcbcbc;
+        color: #dcdcdc;
     }
 </style>
