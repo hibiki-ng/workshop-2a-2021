@@ -16,7 +16,7 @@
               <h2 class="ms-2" style="font-weight: 700;">Pôle Graphisme</h2>
             </div>
           </div>
-          <div id="progressbar" class="d-flex flex-column justify-content-end align-items-center bg-success">
+          <div id="progressbar" class="d-flex flex-column align-items-center mt-1">
             <div class="progress bg-light">
               <div class="progress-bar" role="progressbar" style="width: 32%" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -31,26 +31,29 @@
                 <img class="ms-2 me-2" src="../assets/gem4.png" alt="">
               </div>
             </div>
-            <div id="missionsxp" class="mt-2">
+            <div id="missionsxp">
               <router-link to="/missions" id="missionslist" style="width: 10%;" href="#">Voir les missions pour augmenter en XP</router-link>
             </div>
           </div>
         </div>
         <div id="skills" class="d-flex flex-column align-items-start ps-3">
-          <div class="bg-success">
+          <div class="">
               <img id="badge" src="../assets/diamant.png" alt="">
             </div>
         </div>
       </div>
     </div>
+    <Mission/>
   </section>
 </template>
 
 <script>
+import Mission from './Mission.vue'
 
   export default {
     name: 'Profile',
     components: {
+      Mission
     }
   }
 
@@ -65,11 +68,11 @@
     width: 14%;
   }
   #logo {
-    width: 60%;
+    width: 70%;
   }
   #profil {
     width: 81%;
-    height: 20vh;
+    height: 25vh;
   }
   #nickname {
     font-weight: 700;
@@ -83,13 +86,12 @@
   }
   #progress {
     width: 55%;
-    background-color: yellow;
   }
   #pole {
     width: 85%;
   }
   #badge {
-    width: 200px;
+    width: 230px;
   }
   #progressbar {
     height: 100%;
@@ -106,14 +108,14 @@
   }
   #xpcount {
     width: 85%;
-    height: 18%;
-    background-color: turquoise;
+    height: 14%;
   }
   #xpcount p {
     font-weight: 700;
   }
   #missionsxp {
     width: 85%;
+    margin-top: 3vh;
   }
   #missionslist {
     width: 10%;
