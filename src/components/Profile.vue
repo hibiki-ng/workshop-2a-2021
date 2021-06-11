@@ -1,48 +1,57 @@
 <template>
-  <div class="Profile d-flex justify-content-center">
-    <div id="profil" class="d-flex justify-content-center">
-      <div id="infos" class="d-flex flex-column align-items-start">
-        <img id="logo" class="me-4" src="../assets/zinogra.png" alt="">
-        <div class="d-flex flex-column">
-          <h4 id="nickname" class="">ZINOGRA</h4>
-          <h5 id="fullname" class="">Louis DI BATTISTA</h5>
-        </div>
-      </div>
-      <div id="progress" class="d-flex flex-column align-items-center">
-        <div id="pole" class="d-flex flex-row">
-          <img id="graphismelogo" src="../assets/graphisme.png" alt="">
-          <h2 class="ms-3" style="font-weight: 700;">Pôle Graphisme</h2>
-        </div>
-        <div id="progressbar" class="d-flex flex-column justify-content-end align-items-center">
-          <div class="progress bg-light">
-            <div class="progress-bar" role="progressbar" style="width: 32%" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          <div id="xpcount" class="d-flex flex-row justify-content-end mt-1">
-            <p>80 XP / 250 XP</p>
-          </div>
-          <div id="missionsxp" class="">
-            <router-link to="/missions" id="missionslist" style="width: 10%;" href="#">Voir les missions pour augmenter en XP</router-link>
+  <section>
+    <div class="Profile d-flex justify-content-center mb-5 pb-5">
+      <div id="profil" class="d-flex justify-content-center">
+        <div id="infos" class="d-flex flex-column align-items-start">
+          <img id="logo" class="me-4" src="../assets/zinogra.png" alt="">
+          <div class="d-flex flex-column">
+            <h4 id="nickname" class="">ZINOGRA</h4>
+            <h5 id="fullname" class="">Louis DI BATTISTA</h5>
           </div>
         </div>
-      </div>
-      <div id="skills" class="d-flex flex-column align-items-start ps-3">
-        <div id="skillsrow1" class="d-flex flex-row align-items-center justify-content-between skillsrow">
-          <img src="../assets/gem1.png" alt="">
-          <img src="../assets/gem2.png" alt="">
+        <div id="progress" class="d-flex flex-column align-items-center">
+          <div id="pole" class="d-flex flex-row justify-content-between">
+            <div class="d-flex flew-row">
+              <img id="graphismelogo" src="../assets/graphisme.png" alt="">
+              <h2 class="ms-2" style="font-weight: 700;">Pôle Graphisme</h2>
+            </div>
+          </div>
+          <div id="progressbar" class="d-flex flex-column justify-content-end align-items-center bg-success">
+            <div class="progress bg-light">
+              <div class="progress-bar" role="progressbar" style="width: 32%" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div id="xpcount" class="d-flex flex-row justify-content-end">
+              <p>80 XP / 250 XP</p>
+            </div>
+            <div id="gems" class="d-flex flew-row justify-content-start">
+              <div id="skillsrow1" class="d-flex flex-row justify-content-start skillsrow">
+                <img class="me-2" src="../assets/gem1.png" alt="">
+                <img class="ms-2 me-2" src="../assets/gem2.png" alt="">
+                <img class="ms-2 me-2" src="../assets/gem3.png" alt="">
+                <img class="ms-2 me-2" src="../assets/gem4.png" alt="">
+              </div>
+            </div>
+            <div id="missionsxp" class="mt-2">
+              <router-link to="/missions" id="missionslist" style="width: 10%;" href="#">Voir les missions pour augmenter en XP</router-link>
+            </div>
+          </div>
         </div>
-        <div id="skillsrow2" class="d-flex flex-row align-items-center justify-content-between skillsrow">
-          <img src="../assets/gem3.png" alt="">
-          <img src="../assets/gem4.png" alt="">
+        <div id="skills" class="d-flex flex-column align-items-start ps-3">
+          <div class="bg-success">
+              <img id="badge" src="../assets/diamant.png" alt="">
+            </div>
         </div>
       </div>
-
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
+
   export default {
-    name: 'Profile'
+    name: 'Profile',
+    components: {
+    }
   }
 
   
@@ -69,22 +78,26 @@
     color: #bcbcbc;
   }
   #graphismelogo {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
   #progress {
     width: 55%;
+    background-color: yellow;
   }
   #pole {
-    width: 80%;
+    width: 85%;
+  }
+  #badge {
+    width: 200px;
   }
   #progressbar {
     height: 100%;
     width: 100%;
   }
   .progress {
-    height: 26px;
-    width: 80%;
+    height: 28px;
+    width: 85%;
     border-radius: 15px;
     border: 3px solid #3FDF3F;
   }
@@ -92,13 +105,15 @@
     background-color: #3FDF3F;
   }
   #xpcount {
-    width: 80%;
+    width: 85%;
+    height: 18%;
+    background-color: turquoise;
   }
   #xpcount p {
     font-weight: 700;
   }
   #missionsxp {
-    width: 80%;
+    width: 85%;
   }
   #missionslist {
     width: 10%;
@@ -120,17 +135,19 @@
   #skills {
     width: 14%;
   }
+  #gems {
+    width: 85%;
+  }
   .skillsrow {
     width: 100%;
     height: 50%;
   }
   .skillsrow img {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     padding: 10px 10px;
     box-shadow: 0 3px 3px;
     border-radius: 50px;
-    justify-content: space-between;
   }
   
 </style>

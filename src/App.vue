@@ -16,7 +16,7 @@
           </div>
         </div>
       </nav>
-    <router-view name="profile" class=""/>
+    <router-view name="profile"/>
     <router-view/>
   </section>
 </template>
