@@ -6,7 +6,7 @@
             <router-link to="/poles" class="link">Pôles</router-link>
           </div>
           <router-link to="/" class="navbar-brand" href="#" style="display: flex; justify-content: center;">
-            <img src="./assets/logo.png" alt="Logo Game'Her" style="width: 23%; height: auto;">
+            <img src="http://tbrzezin.eemi.tech/src/img/workshop/assets/logo.png" alt="Logo Game'Her" style="width: 23%; height: auto;">
           </router-link>
           <div>
             <router-link to="/missions" class="me-3 link">Missions</router-link>
@@ -41,7 +41,7 @@ body {
   margin: 0;
   padding: 0;
   color: white;
-  background-image: url("assets/background.jpg");
+  background-image: url("http://tbrzezin.eemi.tech/src/img/workshop/assets/background.jpg");
   background-attachment: scroll;
   background-size: cover;
 }

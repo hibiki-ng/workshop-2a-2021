@@ -3,7 +3,7 @@
     <div class="Profile d-flex justify-content-center mb-5 pb-5">
       <div id="profil" class="d-flex justify-content-center">
         <div id="infos" class="d-flex flex-column align-items-start">
-          <img id="logo" class="me-4" src="../assets/zinogra.png" alt="">
+          <img id="logo" class="me-4" src="http://tbrzezin.eemi.tech/src/img/workshop/assets/zinogra.png" alt="">
           <div class="d-flex flex-column">
             <h4 id="nickname" class="">ZINOGRA</h4>
             <h5 id="fullname" class="">Louis DI BATTISTA</h5>
@@ -12,7 +12,7 @@
         <div id="progress" class="d-flex flex-column align-items-center">
           <div id="pole" class="d-flex flex-row justify-content-between">
             <div class="d-flex flew-row">
-              <img id="graphismelogo" src="../assets/graphisme.png" alt="">
+              <img id="graphismelogo" src="http://tbrzezin.eemi.tech/src/img/workshop/assets/graphisme.png" alt="">
               <h2 class="ms-2" style="font-weight: 700;">Pôle Graphisme</h2>
             </div>
           </div>
@@ -25,10 +25,10 @@
             </div>
             <div id="gems" class="d-flex flew-row justify-content-start">
               <div id="skillsrow1" class="d-flex flex-row justify-content-start skillsrow">
-                <img class="me-2" src="../assets/gem1.png" alt="">
-                <img class="ms-2 me-2" src="../assets/gem2.png" alt="">
-                <img class="ms-2 me-2" src="../assets/gem3.png" alt="">
-                <img class="ms-2 me-2" src="../assets/gem4.png" alt="">
+                <img class="me-2" src="http://tbrzezin.eemi.tech/src/img/workshop/assets/gem1.png" alt="">
+                <img class="ms-2 me-2" src="http://tbrzezin.eemi.tech/src/img/workshop/assets/gem2.png" alt="">
+                <img class="ms-2 me-2" src="http://tbrzezin.eemi.tech/src/img/workshop/assets/gem3.png" alt="">
+                <img class="ms-2 me-2" src="http://tbrzezin.eemi.tech/src/img/workshop/assets/gem4.png" alt="">
               </div>
             </div>
             <div id="missionsxp">
@@ -38,7 +38,7 @@
         </div>
         <div id="skills" class="d-flex flex-column align-items-start ps-3">
           <div class="">
-              <img id="badge" src="../assets/diamant.png" alt="">
+              <img id="badge" src="http://tbrzezin.eemi.tech/src/img/workshop/assets/diamant.png" alt="">
             </div>
         </div>
       </div>
