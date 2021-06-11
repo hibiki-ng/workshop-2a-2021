@@ -16,7 +16,7 @@
               <h2 class="ms-2" style="font-weight: 700;">Pôle Graphisme</h2>
             </div>
           </div>
-          <div id="progressbar" class="d-flex flex-column align-items-center mt-1">
+          <div id="progressbar" class="d-flex flex-column align-items-center mt-2">
             <div class="progress bg-light">
               <div class="progress-bar" role="progressbar" style="width: 32%" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -108,7 +108,7 @@ import Mission from './Mission.vue'
   }
   #xpcount {
     width: 85%;
-    height: 14%;
+    height: 12%;
   }
   #xpcount p {
     font-weight: 700;
