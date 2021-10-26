@@ -6,10 +6,10 @@ La problématique de l'association était la rétention et l'intérêt de ses b�
 
 Nous avons pour ça crée une plateforme de gestion d'équipe et de tâches avec un côté jeu vidéo,
 avec des niveaux, une barre d'expérience, des badges et autres, basés sur la participation,
-####afin de pousser les gens à s'investir, et proposer des récompenses adaptées. 
+afin de pousser les gens à s'investir, et proposer des récompenses adaptées.  
 
 ## Technos utilisées
-####Front: VueJS
+Front: VueJS  
 Back: API GitLab
 
 
