@@ -11,9 +11,11 @@ sur la participation, afin de pousser les gens √† s'investir, et proposer des r√
 
 ## Installer le projet
 
+Cloner le projet sur votre machine
 ```
 git clone https://github.com/hibiki-ng/workshop-2a-2021.git
 ```
+Installer les modules
 ```
 npm install
 ```
